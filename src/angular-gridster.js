@@ -923,11 +923,11 @@
 								if (gridster.rowHeight === 'match') {
 									gridster.curRowHeight = Math.round(gridster.curColWidth);
 								} else if (gridster.rowHeight.indexOf('*') !== -1) {
-									gridster.curRowHeight = Math.round(gridster.curColWidth * gridster.rowHeight.replace('*', '').replace(' ', ''));
+									gridster.curRowHeight = Math.round(gridster.curColWidth * parseInt(gridster.rowHeight.replace('*', '').replace(' ', ''), 10));
 								} else if (gridster.rowHeight.indexOf('/') !== -1) {
-									gridster.curRowHeight = Math.round(gridster.curColWidth / gridster.rowHeight.replace('/', '').replace(' ', ''));
+									gridster.curRowHeight = Math.round(gridster.curColWidth / parseInt(gridster.rowHeight.replace('/', '').replace(' ', ''), 10));
 								} else if (gridster.rowHeight.indexOf('-') !== -1) {
-									gridster.curRowHeight = Math.round(gridster.curColWidth - gridster.rowHeight.replace('-', '').replace(' ', ''));
+									gridster.curRowHeight = Math.round(gridster.curColWidth - parseInt(gridster.rowHeight.replace('-', '').replace(' ', ''), 10));
 								}
 							}
 
