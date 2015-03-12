@@ -27,7 +27,8 @@
 		"karma-coverage": "^0.2.1",
 		"grunt-contrib-less": "^0.11.0",
 		"karma-phantomjs-launcher": "^0.1.4",
-		"karma": "^0.12.16"
+		"karma": "^0.12.16",
+        "coffee-script": "~1.6.3"
 	},
 	"engines": {
 		"node": ">=0.10.0"

@@ -927,8 +927,8 @@
 								} else if (gridster.rowHeight.indexOf('/') !== -1) {
 									gridster.curRowHeight = Math.round(gridster.curColWidth / gridster.rowHeight.replace('/', '').replace(' ', ''));
 								} else if (gridster.rowHeight.indexOf('-') !== -1) {
-                                    gridster.curRowHeight = Math.round(gridster.curColWidth - gridster.rowHeight.replace('-', '').replace(' ', ''));
-                                }
+									gridster.curRowHeight = Math.round(gridster.curColWidth - gridster.rowHeight.replace('-', '').replace(' ', ''));
+								}
 							}
 
 							gridster.isMobile = gridster.mobileModeEnabled && gridster.curWidth <= gridster.mobileBreakPoint;
